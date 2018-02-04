@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Make a URL Longer</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <script src="js/lengthen.js"></script>
+</head>
+<body>
+<div id="container">
+    <div id="row">
+        <div id="col">
+            <div id="box">
+                <h1>Make a URL Longer</h1>
+                <form>
+                    <label for="url">
+                        URL to lengthen. Be sure to include <code>http://</code> or <code>https://</code>.
+                    </label><br />
+                    <input type="url" id="url" />
+                    <input type="submit" value="Lengthen" id="submit" />
+                </form>
+                <span class="space"></span>
+                <label for="long-url">Longer URL</label>
+                <textarea readonly cols="100" rows="10" id="long-url"></textarea>
+                <p>Tip: recursion is possible for the truly malicious.</p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
