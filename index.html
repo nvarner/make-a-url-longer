@@ -1,10 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="title" content="Make a URL Longer"/>
+    <meta name="description" content="Take a URL and make the URL longer. Makes a URL into a longer URL."/>
+    <meta name="keywords" content="longer URL,long URL,long,lengthen,URL"/>
+    <meta name="robots" content="index, follow"/>
+    <meta name="language" content="English"/>
+    <meta name="author" content="Nathan Varner"/>
+
+    <meta http-equiv="Referrer-Policy" content="no-referrer">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Make a URL Longer"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="http://make-a-url-longer.nathanvarner.com"/>
+    <meta property="og:image" content="http://make-a-url-longer.nathanvarner.com/img/open_graph.png"/>
+    <meta property="og:image:alt" content="A number of lines of 'url.' decending and becomming lighter in color."/>
+    <meta property="og:description" content="Take a URL and make the URL longer. Makes a URL into a longer URL."/>
+
+    <!-- Windoze -->
+    <meta name="application-name" content="Make a URL Longer"/>
+    <meta name="msapplication-TileColor" content="#7e5d13"/>
+
     <title>Make a URL Longer</title>
 
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.css"/>
+
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico"/>
+    <link rel="apple-touch-icon" href="img/apple.png">
 
     <script src="js/lengthen.js"></script>
 </head>
@@ -12,18 +38,19 @@
 <div id="container">
     <div id="row">
         <div id="col">
-            <div id="box">
+            <div role="main" id="box">
                 <h1>Make a URL Longer</h1>
-                <form>
+                <form itemscope itemtype="http://schema.org/CreateAction">
                     <label for="url">
                         URL to lengthen. Be sure to include <code>http://</code> or <code>https://</code>.
-                    </label><br />
-                    <input type="url" id="url" />
-                    <input type="submit" value="Lengthen" id="submit" />
+                    </label><br/>
+                    <input type="url" id="url"/>
+                    <input type="submit" value="Lengthen" id="submit"/>
+                    <span class="space"></span>
+                    <label for="long-url">Longer URL</label><br/>
+                    <textarea readonly id="long-url" itemprop="result" itemscope rows="10"
+                              itemtype="http://schema.org/URL"></textarea>
                 </form>
-                <span class="space"></span>
-                <label for="long-url">Longer URL</label>
-                <textarea readonly cols="100" rows="10" id="long-url"></textarea>
                 <p>Tip: recursion is possible for the truly malicious.</p>
             </div>
         </div>

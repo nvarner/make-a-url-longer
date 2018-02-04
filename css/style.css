@@ -31,6 +31,10 @@ html, body, #container, #row, #col {
     box-shadow: rgba(0, 0, 0, 0.5) 10px -8px 120px 50px;
 }
 
+#long-url {
+    width: 80%;
+}
+
 .space {
     display: block;
     margin: 5%;

@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: 
+Sitemap: http://make-a-url-longer.nathanvarner.com/sitemap.xml
